@@ -1,0 +1,90 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ecac78;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+.input-grp {
+  background: #fcd998;
+  padding: 30px 35px;
+  border-radius: 10px;
+}
+
+#input-box {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #0a0a0a;
+}
+
+#input-box::placeholder {
+  color: #02020252;
+}
+
+button {
+  padding: 10px 15px;
+  background: #f8b177;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #1f1e1e;
+  margin-left: 15px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #f8a15b;
+}
+
+#output {
+  display: none;
+}
+
+#output {
+  text-align: center;
+  padding: 15px;
+  margin: 12px;
+  background: #ff91011f;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #1f1e1e;
+}
+
+@media (max-width: 442px) {
+
+  h2 {
+    font-size: 1.5rem; /* ছোট স্ক্রিনে heading ছোট হবে */
+  }
+
+  .input-grp {
+    padding: 20px;
+  }
+
+  #input-box {
+    font-size: 16px;
+    width: 120px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
